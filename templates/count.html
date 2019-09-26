@@ -1,0 +1,7 @@
+<a href="{% url 'home' %}">Try New Text</a>
+<h2>Paragraph:</h2>
+<p>{{ text }}</p>
+<h2>There are {{ len }} words in the paragraph</h2>
+{% for word,count in word_counter %}
+{{ word }}:{{count}} <br>
+{% endfor%}
